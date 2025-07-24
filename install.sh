@@ -1,6 +1,5 @@
 #!/bin/bash
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/components/env.sh"
+source "$HOME/.local/shell/components/env.sh"
 
 sudo apt update && sudo apt upgrade
 

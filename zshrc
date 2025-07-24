@@ -1,5 +1,4 @@
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/components/env.sh"
+source "$HOME/.local/shell/components/env.sh"
 
 ZSH_THEME="apple"
 
