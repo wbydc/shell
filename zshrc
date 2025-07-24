@@ -24,7 +24,6 @@ autoload -U add-zsh-hook
 
 components=(
   aliases
-  1password
   git
   go
   kubectl
@@ -35,4 +34,5 @@ for component in "${components[@]}"; do
 done
 unset component
 
+eval $(thefuck --alias --enable-experimental-instant-mode)
 eval "$(oh-my-posh init zsh --config $SHELL_CONFIG/posh/wbydc.omp.json)"
