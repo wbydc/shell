@@ -16,7 +16,7 @@ plugins=(
   zsh-autosuggestions
 )
 
-source "$SCRIPT_DIR/config.sh"
+source "$SHELL_CONFIG/config.sh"
 source $ZSH/oh-my-zsh.sh
 
 autoload -U add-zsh-hook
