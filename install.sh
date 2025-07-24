@@ -17,6 +17,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 curl -s https://ohmyposh.dev/install.sh | bash -s
 
 components=(
+  git
   gmd
   go
   kubectl
@@ -29,3 +30,4 @@ done
 
 touch "$SHELL_CONFIG/config.sh" && chmod 600 "$SHELL_CONFIG/config.sh"
 echo "source $SHELL_CONFIG/zshrc" > "$HOME/.zshrc"
+
