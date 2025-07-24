@@ -25,6 +25,7 @@ autoload -U add-zsh-hook
 components=(
   aliases
   1password
+  git
   go
   kubectl
 )

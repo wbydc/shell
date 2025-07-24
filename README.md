@@ -27,25 +27,13 @@ cd ~/.local/shell
 bash install.sh
 ```
 
-You may need to source the main config in your `.bashrc`, `.zshrc`, or equivalent:
-
-```bash
-source ~/.local/shell/config.sh
-```
-
 ## Directory Structure
 
-- `config.sh` – Main entry point for shell configuration
+- `config.sh` – Storage for your configs
 - `install.sh` – Installation script
 - `components/` – Modular shell scripts (aliases, env, go, kubectl, etc.)
-- `configs/` – Additional configuration files (e.g., keys)
-- `custom/` – Place your custom scripts here (not tracked by git)
 - `install/` – Tool-specific install scripts
 - `posh/` – Prompt configuration files (e.g., for oh-my-posh)
-
-## Customization
-
-Add your own scripts to the `custom/` directory. These will be sourced automatically if present.
 
 ## Updating
 
