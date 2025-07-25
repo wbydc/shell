@@ -23,6 +23,7 @@ autoload -U add-zsh-hook
 
 components=(
   aliases
+  nvm
   git
   go
   kubectl

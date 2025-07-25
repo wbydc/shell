@@ -82,13 +82,6 @@
           "foreground": "#fff",
           "type": "go",
           "style": "plain"
-        },
-        {
-          "template": " \ue81d {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
-          "foreground": "#fff",
-          "background": "transparent",
-          "type": "kubectl",
-          "style": "plain"
         }
       ]
     },

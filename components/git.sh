@@ -19,7 +19,10 @@ git_push_task() {
   git push -u origin "$branch"
 }
 
-alias gpt='git_push_task'
+function gpt() {
+  git_push_task "$@"
+}
+
 
 git_pull_all() {  
   find . -type d -name ".git" | while read -r gitdir; do  
@@ -29,7 +32,9 @@ git_pull_all() {
   done  
 }
 
-alias gpa='git_pull_all'
+function gpa() {
+  git_pull_all
+}
 
 
 git_rebase_main() {  
@@ -39,4 +44,6 @@ git_rebase_main() {
   git rebase "origin/$default_branch"  
 }
 
-alias grm='git_rebase_main'
+function grm() {
+  git_rebase_main
+}
